@@ -1,0 +1,23 @@
+{
+    "fortran.linter.compiler": "gfortran",
+    "fortran.linter.compilerPath": "C:/MinGW/bin/gfortran.exe",
+    "fortran.fortls.path": "C:/users/kotam/Documents/Fortran/.fortran/Scripts/fortls.exe",
+    "fortran.formatting.formatter": "fprettify",
+    "fortran.formatting.path": "C:/users/kotam/Documents/Fortran/.fortran/Scripts/fprettify.exe",
+    "fortran.formatting.fprettifyArgs": [
+        "--indent",
+        "4",
+        "--enable-decl",
+        "--strip-comments",
+        "--case",
+        "1",
+        "1",
+        "1",
+        "1"
+    ],
+    "fortran.preferredCase": "lowercase",
+    "[FortranFreeForm]": {
+        "files.autoGuessEncoding": true,
+        "files.encoding": "shiftjis"
+    }
+}
