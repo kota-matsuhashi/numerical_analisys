@@ -190,15 +190,15 @@ c
 c
       x(1)=0.0
       do i=2,if
-      x(i)=x(i-1)+dx
+            x(i)=x(i-1)+dx
       enddo
       y(1)=0.0
       do j=2,jf
-      y(j)=y(j-1)+dy
+            y(j)=y(j-1)+dy
       enddo
       z(1)=0.0
       do k=2,kf
-      z(k)=z(k-1)+dz
+            z(k)=z(k-1)+dz
       enddo
 c
       open(11,file='CUBICP.DAT',status='unknown', blank='null')
