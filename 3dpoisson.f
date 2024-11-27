@@ -50,7 +50,7 @@ C
                     k=kk
                     if (mod(na,2).eq.0) k=kf+1-k
 C-------- 立方体内部および表面を検出 --------
-                    if (i.gt.ia.and.i.lt.ib .and.j.gt.ja.and.j.lt.jb .and.k.gt.ka.and.k.lt.kb) go to 10      
+                    if (i.gt.ia.and.i.lt.ib .and.j.gt.ja.and.j.lt.jb.and.k.gt.ka.and.k.lt.kb) go to 10      
                     im1=i-1
                     ip1=i+1
                     jm1=j-1
@@ -94,7 +94,7 @@ C-------- 流速を計算 --------
       do i=1,if
         do j=1,jf
             do k=1,kf
-                if (i.gt.ia.and.i.lt.ib .and.j.gt.ja.and.j.lt.jb .and.k.gt.ka.and.k.lt.kb) go to 30
+                if i.gt.ia.and.i.lt.ib .and.j.gt.ja.and.j.lt.jb .and.k.gt.ka.and.k.lt.kb) go to 30
                 dx1=dx*2.0D0
                 dy1=dy*2.0D0
                 dz1=dz*2.0D0
