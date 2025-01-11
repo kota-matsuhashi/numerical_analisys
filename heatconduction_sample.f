@@ -47,9 +47,9 @@ C
       do k=1,kf
 c
       im1=i-1
-C     if (i.eq.1) im1=2
+      if (i.eq.1) im1=2
       ip1=i+1
-C     if (i.eq.if) ip1=if-1
+      if (i.eq.if) ip1=if-1
       ckxl=ck1
       ckxr=ck1
       if ((j.ge.ja).and.(j.le.jb).and.
@@ -170,15 +170,15 @@ c
       close(11)
       open(11,file='DCUBICP.DAT',status='unknown', blank='null')
        uin=1.0
-       vis=0.0
-       tin=0.0
-       time=0.0
+c       vis=0.0
+c       tin=0.0
+c       time=0.0
        write(11,111) if,jf,kf
-       write(11,112) uin,vis,tin,time
-       !write(11,112) (((1.0,i=1,if),j=1,jf),k=1,kf)
-       !write(11,112) (((0.0,i=1,if),j=1,jf),k=1,kf)
-       !write(11,112) (((0.0,i=1,if),j=1,jf),k=1,kf)
-       !write(11,112) (((0.0,i=1,if),j=1,jf),k=1,kf)
+       write(11,112) uin
+c       write(11,112) (((1.0,i=1,if),j=1,jf),k=1,kf)
+c       write(11,112) (((0.0,i=1,if),j=1,jf),k=1,kf)
+c       write(11,112) (((0.0,i=1,if),j=1,jf),k=1,kf)
+c       write(11,112) (((0.0,i=1,if),j=1,jf),k=1,kf)
        write(11,112) (((T(i,j,k),i=1,if),j=1,jf),k=1,kf)
       close(11)
 c

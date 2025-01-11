@@ -29,6 +29,14 @@ program report_rocket4
     ! 境界条件
     do k = 1, kf
         do j = 1, jf
+            do i = 1, if
+                T(i, j, k) = 50.0 ! 初期温度
+                al(i, j, k) = 50.0 
+            end do
+        end do
+    end do
+    do k = 1, kf
+        do j = 1, jf
             T(1, j, k) = 100.0 ! x=0での温度
             T(if, j, k) = 50.0 ! x=Lでの温度
         end do
